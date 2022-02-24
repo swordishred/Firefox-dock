@@ -80,27 +80,27 @@
       <description>Panel positions (JSON).</description>
     </key>
     <key name="panel-element-positions" type="s">
-      <default>'{}'</default>
+      <default>{"0":[{"element":"showAppsButton","visible":false,"position":"stackedTL"},{"element":"activitiesButton","visible":false,"position":"stackedTL"},{"element":"leftBox","visible":true,"position":"stackedTL"},{"element":"taskbar","visible":true,"position":"centerMonitor"},{"element":"centerBox","visible":true,"position":"stackedBR"},{"element":"rightBox","visible":true,"position":"stackedBR"},{"element":"systemMenu","visible":true,"position":"stackedBR"},{"element":"dateMenu","visible":true,"position":"stackedBR"},{"element":"desktopButton","visible":true,"position":"stackedBR"}]}'</default>
       <summary>Panel element positions</summary>
       <description>Panel element positions (JSON).</description>
     </key>
     <key type="s" name="panel-lengths">
-      <default>'{}'</default>
+      <default>'{"0":100}'</default>
       <summary>Percentages of screen edge for panel to span</summary>
       <description>Length of the panels, in percent (JSON).</description>
     </key>
     <key type="s" name="panel-anchors">
-      <default>'{}'</default>
+      <default>'{"0":"MIDDLE"}'</default>
       <summary>Positions along screen edge</summary>
       <description>Where to show the panels if it is not the full length of the screen edge (JSON).</description>
     </key>
     <key type="s" name="panel-sizes">
-      <default>'{}'</default>
+      <default>''{"0":32}'</default>
       <summary>Panel sizes</summary>
       <description>Sizes of panels, in pixels.</description>
     </key>
     <key type="i" name="panel-size">
-      <default>48</default>
+      <default>32</default>
       <summary>Panel size (Deprecated)</summary>
       <description>Set the size of the panel.</description>
     </key>
@@ -410,12 +410,12 @@
       <description>Show activities button on the left hand side of the taskbar</description>
     </key>
     <key type="i" name="showdesktop-button-width">
-      <default>8</default>
+      <default>5</default>
       <summary>Width of show Desktop button</summary>
       <description>Customize the width of the show Desktop button</description>
     </key>
     <key type="b" name="show-showdesktop-hover">
-      <default>false</default>
+      <default>true</default>
       <summary>Show desktop on hover</summary>
       <description>Show the desktop on mouse hover</description>
     </key>
@@ -776,7 +776,7 @@
       <summary>App icon hover animation duration in milliseconds</summary>
     </key>
     <key type="a{si}" name="animate-appicon-hover-animation-extent">
-      <default>{'RIPPLE':4,'PLANK':4}</default>
+      <default>'RIPPLE':4,'PLANK':4,'SIMPLE':1</default>
       <summary>App icon hover animation extent (maximum number of animated icons)</summary>
     </key>
     <key type="a{si}" name="animate-appicon-hover-animation-rotation">
